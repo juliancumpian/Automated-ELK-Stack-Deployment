@@ -40,13 +40,13 @@ The configuration details of each machine may be found below.
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+Not all of the virtual machines of the internal network are exposed to the public Internet. 
 
-Only the Jump-Box virtual machine can accept connections from the Internet. 
-Access to this machine is only allowed from the following IP address:
+Only the Jump-Box and the ELK4444 can accept connections from the Internet. 
+Access to these machines are allowed from the following local IP address:
 156.146.43.11
 
-Machines within the network can only be accessed by the Jump-Box. 
+The other virtual machines within the network can only be accessed by the Jump-Box. 
 Access to these machines are only allowed from the following IP address:
 10.0.0.4
 
@@ -58,7 +58,7 @@ A summary of the access policies in place can be found in the table below.
 |Jump-Box |Yes                 |156.146.43.11        |
 |Web-1    |No                  |10.0.0.4             |
 |Web-2    |No                  |10.0.0.4             |
-|ELK4444  |No                  |10.0.0.4             |
+|ELK4444  |Yes                 |156.146.43.11        |
 
 
 ### Elk Configuration
@@ -106,3 +106,4 @@ SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to /etc/ansible/.
 - Update the hosts file in this same directory to include the group name of the ELK server (elk) along with the ELK server's IP address (10.1.0.4).
 - Run the playbook, and navigate to http://52.188.212.160:5601/app/kibana to check that the installation worked as expected.
+(To see successfully pulled data from the web servers on Kibana, please reference the screenshots: Images/filebeatdatasuccess.jpg and Images/metricbeatdatasuccess.jpg)

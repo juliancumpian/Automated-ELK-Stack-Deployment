@@ -106,4 +106,4 @@ SSH into the control node and follow the steps below:
 - Copy the install-elk.yml file to /etc/ansible/.
 - Update the hosts file in this same directory to include the group name of the ELK server (elk) along with the ELK server's IP address (10.1.0.4).
 - Run the playbook, and navigate to http://52.188.212.160:5601/app/kibana to check that the installation worked as expected.
-(To see successfully pulled data from the web servers on Kibana, please reference the screenshots: Images/filebeatdatasuccess.jpg and Images/metricbeatdatasuccess.jpg)
+(To see successfully pulled data from the web servers on Kibana, please refer to these screenshots: Images/filebeatdatasuccess.jpg and Images/metricbeatdatasuccess.jpg)

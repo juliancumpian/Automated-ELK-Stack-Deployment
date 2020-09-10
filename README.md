@@ -21,7 +21,7 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly stable and resiliant against DDoS attacks, in addition to restricting access to the network.
 
@@ -86,10 +86,10 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines:
 Web-1 (10.0.0.5) and Web-2 (10.0.0.6)
 
-We have installed the following Beats on these machines:
+I installed the following Beats on these machines:
 Filebeat and Metricbeat
 
-These Beats allow us to collect the following information from each machine:
+These Beats allow you to collect the following information from each machine:
 
 Filebeat: monitors set log files, collects data about which files have changed, 
 and moves this arranged information to Elasticsearch for future review. 
